@@ -1,0 +1,65 @@
+header{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    color: #808000 ;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin:0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+/*Navigation Bar CSS*/
+nav{
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    margin: 0 15px;
+}
+
+nav ul li a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+/*Header CSS*/
+header{
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1{
+    font-size: 35px;
+}
+
+header p{
+    font-size: 18px
+}
+
+/*Button CSS*/
+button{
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}

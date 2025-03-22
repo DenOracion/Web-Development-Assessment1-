@@ -1,0 +1,47 @@
+/*styling for the header image*/
+.header_image{ 
+    width: 100%; /*sets image width*/
+    max-height: 300px; /*limits image height*/
+    object-fit: cover;
+    border-radius: 5px; 
+    margin-bottom: 20px;
+}
+/*basic styling for the entire page*/
+body {
+    font-family: 'Open Sans', 'Times New Roman', Times, serif; /*defines the text font used for the page*/
+    line-height: 1.6; /*sets space between lines of text*/
+    max-width: 800px; /*limits page width*/
+    margin: 0 auto; /*makes sure the content is centered*/
+    padding: 20px; /*creates space between content and edge of the body*/
+    background-color:bisque; /*sets the background color of the website*/
+    color: #5D4037; /*sets the text color to brown*/
+}
+/*styling for headings*/
+h1 {
+    color:#BF360C; /*sets h1 color to burgundy*/
+    text-align: center;/*centers header*/
+    border-bottom: 3px solid #827717; /*creates a solid 3 pixel olive line below heading*/
+}
+
+h2 {
+    color: #2E7D32; /*makes h2 color to green*/
+    margin-top: 20px; /*adds a 20 pixel space above each h2 header*/ 
+    padding-left: 10px; /*adds 10 pixels of space between the left border and text*/
+}
+/*styling for lists*/
+ul, ol {
+    background-color: wheat; /*colors the background of the list wheat*/
+    padding: 20px 20px 20px 40px;/*creates interior space following 20 pixels on the top, left, and bottom while 40 pixels to the left*/
+    border-radius: 5px; /*rounds corners of the list box*/
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1); /*creates a shadow effect*/
+}
+/*styling for the recipe description*/
+.recipe_description {
+    font-style: 'Georgia'; /*creates the text into Georgia*/
+    background-color: wheat; /*sets the background color to wheat*/
+    padding: 15px;/*adds 15 pixels of space between text and edge of the background*/
+    border-radius: 5px; /*rounds corners of the background*/
+    text-align: center; /*centers text*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)/*similar to the one in the ul,ol; creates a shadow effect behind the box*/
+
+}

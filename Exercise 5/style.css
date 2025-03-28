@@ -1,0 +1,18 @@
+body{
+    margin: 0; /*removes defauly margin*/
+    padding: 0;
+    height: 100%; /*sets full height for body*/
+    display: flex; /*flexbox for centering*/
+    justify-content: center; /*centers the video horizontally*/
+    align-items: center; /*centers the video vertically*/
+    background: radial-gradient(#0b3d91, #000000) /*creates a gradient type background*/
+}
+
+/*styling of the video*/
+video{
+    max-width: 800px; 
+    max-height: 450px;
+    /*ensures that the video is the same size as the poster and does not take up the full screen when played*/
+    width: 100%;
+    height: auto;
+}

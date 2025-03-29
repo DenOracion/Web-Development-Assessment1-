@@ -1,0 +1,94 @@
+/*styling for main content of website*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #100e19; /*sets a dark background*/
+    color: #ffffff; /*sets the text to white to contrast the darker background*/
+}
+/*styling for header*/
+header {
+    background-color: #100e19;
+    padding: 20px;
+    text-align: center; /*moves text to be positioned centrally*/
+}
+/*styling for the navigation bar*/
+nav {
+    display: flex;
+    justify-content: center; /*centers navigation links*/
+    gap: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+/*layout for main content*/
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; /*provides vertical spacing*/
+    width: 100%;
+}
+
+.welcome{
+    flex: 3;
+    padding: 0 15px;
+    background-color: #ffffff; /*sets the color of the welcome section to white*/
+    color: #000000; /*sets the text to a black color to contrast the white background, enabling readability*/
+}
+
+.lineup{
+    flex: 1;
+    padding: 20px;
+    background-color: #172d67; /*sets the color of the lineup section to dark blue*/
+    color: #ffffff;
+    margin: 20px, 0;
+}
+
+/*styling for images to help recreate positions of photos*/
+.code-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+}
+
+.lineup ul {
+    list-style: none; /*removes bullet points*/
+    padding: 0;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.lineup li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px; /*creates space for the dash lines so they do not overlap with the text*/
+}
+
+.lineup li::before{
+    content: '-'; /*changes bullet points to dash lines*/
+    position: absolute;
+    left: 0 ;
+}
+/*styling for the images layout in the lineup section*/
+.lineup-images {
+    display: flex;
+    gap: 15px;
+}
+
+.lineup-images img {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+}
+/*footer styling*/
+footer {
+    background-color: #6a11cb;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+

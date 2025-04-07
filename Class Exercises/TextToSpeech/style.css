@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+input{
+    padding: 30px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid 2px purple;
+}
+
+div{
+    margin: 10px 0px;
+}
+
+button{
+    padding: 10px;
+    background-color: #6a67ce;
+    color: aliceblue;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif; /*sets the font to Arial */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /*light gray background */
+    color: #333; /*creates dark text color*/
+}
+
+/*navigation bar css*/
+nav {
+    background-color: #333; /*dark background*/
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /*when hovering the html tags, css properties, and examples buttons, colors them orange*/
+}
+
+/*header css*/
+header {
+    text-align: center; /*centers text*/
+    padding: 40px 20px;
+    background-color: #ff6600; /*orange background*/
+    color: white;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/*css for table */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/*section css*/
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #ff6600;
+}
+
+/*code block styling*/
+pre {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: "Courier New", monospace; /*sets the font of the lines of code*/
+    font-size: 14px; 
+}

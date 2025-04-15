@@ -1,0 +1,104 @@
+/*general reset to remove default spacing and use consistent box sizing*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*body styling to center content and set font and background*/
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+  
+/*styling for the game container */
+.game-container {
+    background-color: #fff; /**/
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+  
+/*main heading style*/
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+  }
+
+/*RGB target color styling*/
+#target-color {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/*layout for color option boxes*/
+.color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/*color box styling*/
+.color-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: transform 0.2s, border 0.3s;
+}
+
+/*hover effect for the color boxes*/
+.color-box:hover {
+    transform: scale(1.05);
+    border: 3px solid #007bff;
+}
+  
+#feedback {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #444;
+}
+
+/*display for lives remaining*/
+#lives {
+    font-size: 1rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+/*endgame counter styling*/
+#endgame {
+    margin-top: 1rem;
+}
+  
+.hidden {
+    display: none;
+}
+
+/*styling for button*/
+button {
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+  

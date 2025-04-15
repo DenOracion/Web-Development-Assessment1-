@@ -1,0 +1,71 @@
+/*general reset: remove default spacing and use consistent box sizing*/
+* {
+    box-sizing: border-box;/*includes padding and border in element's total width and height*/
+    margin: 0; /*removes default margin to all elements*/
+    padding: 0; /*removes default padding to all elements*/
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8; /*sets white background*/
+}
+  
+.calculator {
+    background: white;
+    padding: 2rem; /*space inside container*/
+    border-radius: 12px; /*rounded corners*/
+    width: 300px;
+}
+  
+h2 {
+    text-align: center; /*centers text*/
+    margin-bottom: 1.5rem;
+}
+
+/*label styling for input fields*/
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/*styling for the input fields*/
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+  
+/*highlights the borders of the boxes when user is typing*/
+input[type="number"]:focus {
+    border-color: #007bff;
+}
+
+/*button styling*/
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #007bff; /*blue background when hovering over the button*/
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+/*hover effect on buttons*/
+button:hover {
+    background-color: #0056b3;
+}
+
+/*styling for result displaying*/
+#totalCost {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #333;
+}

@@ -4,7 +4,15 @@
     margin: 0; /*removes default margin to all elements*/
     padding: 0; /*removes default padding to all elements*/
 }
-  
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1rem;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #f4f6f8; /*sets white background*/

@@ -1,0 +1,215 @@
+/*global reset and base styles, removing spacing and use consistent box styling*/
+* {
+    margin: 0; /*remove margin from all elements*/
+    padding: 0; /*remove padding from all elements*/
+    box-sizing: border-box;
+}
+
+/*body styles */
+body {
+    font-family: 'Arial', sans-serif; /*set a consistent font*/
+    line-height: 1.6; /*increase line height for readability*/
+    color: #000000; 
+    background-color: #FFFFFF; 
+    text-align: center; 
+}
+
+/*header styles*/
+h1 {
+    background: #000000;
+    color: #FFFFFF; 
+    padding: 20px; 
+    display: flex; /*use flexbox layout to center content*/
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column; 
+}
+
+/*section styles (applies to all sections)*/
+section {
+    margin-bottom: 2rem; /*space between sections*/
+    padding: 1.5rem; /*padding inside each section*/
+}
+
+/* Navigation styles */
+nav {
+    background-color: #000000; /*black background for navigation*/
+    padding: 0.5rem 2rem;
+}
+
+nav ul {
+    list-style: none; /*remove default list bullets*/
+    display: flex; /*flexbox for horizontal layout*/
+    justify-content: center; 
+    gap: 30px; 
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none; 
+    font-size: 1rem; 
+    padding: 0.5rem 0; 
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #FF0000; /*red color on hover or when active*/
+    text-shadow: 0 0 4px rgba(255, 0, 0, 0.4); /*red glow on hover*/
+    border-bottom: 2px solid #FF0000; /*underline the link on hover*/
+}
+
+/* Main content area */
+main {
+    max-width: 900px; 
+    margin: 0 auto; 
+    padding: 2rem; 
+}
+
+/* Column styles */
+.column {
+    flex: 1; 
+    background-color: #F8F8F8; 
+    border-radius: 5px; /*rounded corners*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*light shadow around columns*/
+    padding: 1.5rem; 
+    border: 1px solid #000000; 
+}
+
+/*topics section styles*/
+.topics-column h2 {
+    color: #000000; /*black text for section headers*/
+    border-bottom: 1px solid #000000; /*black underline for section headers*/
+    margin-bottom: 1rem;
+}
+
+.topic-list {
+    list-style: none; /*remove bullets from the topic list*/
+    margin-bottom: 1.5rem;
+}
+
+.topic-list li {
+    padding: 0.75rem; 
+    margin-bottom: 0.5rem; 
+    background-color: #F0F0F0; 
+    border-radius: 4px; 
+    border-left: 4px solid #000000; 
+}
+
+.topic-list li.completed {
+    border-left-color: #666666; /*gray left border for completed topics*/
+    color: #999999; /*gray text for completed topics*/
+    text-decoration: line-through; /*line-through text for completed topics*/
+}
+
+.topic-list li.in-progress {
+    border-left-color: #FF0000; /*red left border for in-progress topics*/
+    font-weight: bold; /*bold text for in-progress topics*/
+}
+
+/*schedule section styles*/
+.schedule-column h2 {
+    color: #000000; 
+    border-bottom: 1px solid #000000; 
+    margin-bottom: 1rem; 
+}
+
+.progress-bar {
+    height: 20px; /*set height for the progress bar*/
+    background-color: #DDDDDD; /* Light gray background for progress bar */
+    border-radius: 10px; /*rounded corners for progress bar*/
+    overflow: hidden; /*hide overflow to maintain rounded corners*/
+    text-align: center; /*center the text inside the progress bar*/
+}
+
+.progress {
+    height: 100%; /*full height of the progress bar*/
+    background-color: #FF0000; /*red background for the progress*/
+    color: #FFFFFF; 
+    text-align: center;
+    font-size: 0.8rem; 
+    line-height: 20px; /*vertically center the text inside the progress bar*/
+}
+
+.schedule-item {
+    display: flex; /*flexbox layout for schedule items*/
+    justify-content: space-between; /*space out day, time, and activity*/
+    padding: 2rem; /* Padding inside each schedule item */
+    border-bottom: 1px solid #CCCCCC; 
+}
+
+.schedule-item .day,
+.schedule-item .time,
+.schedule-item .activity {
+    color: #000000; /*black text for day, time, and activity*/
+}
+
+/*external tools section styles*/
+#tools h2 {
+    color: #000000; /*black text*/
+    border-bottom: 1px solid #000000; /*black underline for external tools header*/
+    margin-bottom: 1rem; 
+}
+
+.tools ul {
+    list-style: none; /*remove bullets from the tools list*/
+    padding-left: 0; /*remove left padding from the list*/
+}
+
+.tools li {
+    margin-bottom: 10px; 
+    padding: 8px;
+    border-left: 4px solid #FF0000; /*red left border*/
+    background-color: #F0F0F0; /*light gray background for tool items*/
+}
+
+.tools a {
+    color: #000000;
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+.tools a:hover {
+    text-decoration: underline; /*underline on hover*/
+    color: #FF0000; /*red text on hover*/
+}
+
+/* Button styles */
+.add-btn, .schedule-btn {
+    background-color: #FF0000; /*red background for buttons*/
+    color: #FFFFFF; 
+    border: none; /*remove border*/
+    padding: 0.75rem 1rem;
+    border-radius: 4px; /*rounded corners for buttons*/
+    cursor: pointer; /* Change cursor to pointer */
+    width: 100%; /* Buttons take full width */
+    font-size: 0.9rem; 
+    transition: background-color 0.3s ease; /*smooth transition for hover effect*/
+    margin-top: 1rem; 
+}
+
+.add-btn:hover, .schedule-btn:hover {
+    background-color: #CC0000; /*darker red on hover*/
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000; 
+    color: #FFFFFF; 
+    padding: 1.5rem 2rem; 
+    text-align: center; 
+    border-top: 1px solid #000000; 
+}
+
+.footer-links a {
+    color: #FFFFFF; 
+    text-decoration: none; /*remove underline from footer links*/
+    margin: 0 1rem; 
+    font-size: 0.9rem;
+    transition: all 0.3s ease; /*smooth transition for hover effect*/
+}
+
+.footer-links a:hover {
+    color: #FF0000; /*red color on hover*/
+    text-shadow: 0 0 6px rgba(255, 0, 0, 0.5); /*red glow on hover*/
+}

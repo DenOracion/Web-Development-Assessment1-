@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css"> <!--link to external stylesheet-->
+</head>
+<body>
+    <h1>📅Web Development Study Planner</h1> <!--header-->
+    <nav> <!--navigation bar-->
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#onlineresources">Online Resources</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#assignments">Assignments</a></li>
+            <li><a href="#modules">Modules</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!--first section, listing down the topics to be covered during the semester-->
+        <section class="topics-column">
+            <h2>Topics to Cover:</h2>
+            <ul class="topic-list">
+                <li class="completed">Week 1: Starting out with HTML</li>
+                <li class="completed">Week 3: CSS Basics</li>
+                <li>Week 4: JavaScript Introduction</li>
+                <li>Week 5: Website Creation</li>
+            </ul>
+            <button class="schedule-btn">Add New Topic</button> <!--button allowing the user to add more topics-->
+        </section>
+
+        <!--second section covering week schedule, module progress and any remaining tasks-->
+        <section class="schedule-column">
+            <h2>Schedule:</h2>
+            <div class="progress-chart">
+                <h3>Module Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;">70%</div>
+                </div>
+            </div>
+
+            <div class="weekly-schedule">
+                <h3>This Week's Schedule</h3>
+                <div class="schedule-item">
+                    <span class="day">Monday</span>
+                    <span class="time">09:00am - 11:00am</span>
+                    <span class="activity">HTML Lecture</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="day">Tuesday</span>
+                    <span class="time">10:00am - 01:00pm</span>
+                    <span class="activity">Assessment Work</span>
+                </div>
+                <div class="schedule-item">
+                    <span class="day">Wednesday</span>
+                    <span class="time">09:00am - 11:00pm</span>
+                    <span class="activity">CSS Properties</span>
+                </div>
+            </div>
+
+            <div class="upcoming-deadlines">
+                <h3>Upcoming Deadlines</h3>
+                <ul>
+                    <li><span class="date">April 20</span> JavaScript Quiz</li>
+                    <li><span class="date">May 3</span> Web Development Exercises</li>
+                    <li><span class="date">May 12</span> Creating a Website</li>
+                </ul>
+            </div>
+            <button class="schedule-btn">Edit Schedule</button>
+        </section>
+
+        <!--final section containing external tools the user can use-->
+        <section id="tools">
+            <h2>External Tools</h2>
+                <ul>
+                    <li><a href="https://github.com/" target="_blank">GitHub</a> for version control</li>
+                    <li><a href="https://codepen.io/" target="_blank">CodePen</a> for HTML/CSS/JS practice</li>
+                    <li><a href="https://replit.com/" target="_blank">Replit</a> for collaborative coding</li>
+                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a> documentation & reference</li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> tutorials, information and examples for HTML/CSS/JS</li>
+                </ul>
+        </section>
+    </main>
+
+    <!--footer section-->
+    <footer>
+        <div class="footer-links">
+            <a href="#">Help</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
